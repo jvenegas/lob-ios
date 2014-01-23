@@ -58,7 +58,7 @@ typedef void (^ResponseCallback)(NSData *data, NSError *error);
 #pragma mark NSURL Connection Methods
 
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
-    NSLog(@"HTTP Response Code: %i",[(NSHTTPURLResponse*)response statusCode]);
+    NSLog(@"HTTP Response Code: %li",(long)[(NSHTTPURLResponse*)response statusCode]);
     requestData = [NSMutableData data];
     [requestData setLength:0];
 }
