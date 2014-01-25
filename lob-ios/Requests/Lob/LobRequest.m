@@ -34,7 +34,7 @@
 
 -(id)initWithAPIKey:(NSString*)apiKey {
     if(self = [super init]) {
-        _apiKey = apiKey;
+        _apiKey = [NSString stringWithFormat:@"%@:",apiKey];
         if(_apiKey == NULL) _apiKey = @"";
         _count = 2;
         _offset = 1;
@@ -75,7 +75,7 @@
 #pragma mark Setters
 
 -(void)setApiKey:(NSString *)apiKey {
-    _apiKey = apiKey;
+    _apiKey = [NSString stringWithFormat:@"%@:",apiKey];
     if(_apiKey == NULL) _apiKey = @"";
 }
 
