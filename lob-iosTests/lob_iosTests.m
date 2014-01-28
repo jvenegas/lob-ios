@@ -9,7 +9,7 @@
 #import <XCTest/XCTest.h>
 
 #import "LobLibrary.h"
-static NSString *testApiKey = @"test_0dc8d51e0acffcb1880e0f19c79b2f5b0cc:";
+static NSString *testApiKey = @"test_0dc8d51e0acffcb1880e0f19c79b2f5b0cc";
 
 @interface lob_iosTests : XCTestCase {
     LobRequest *request;
