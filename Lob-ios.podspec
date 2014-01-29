@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.platform     = :ios
   s.ios.deployment_target = '6.0'
-  s.source_files  = 'lob-ios/Models,Requests}/**/*.{h,m}', 'lob-ios/Constants/*.{h,m}'
+  s.source_files  = 'lob-ios/{Models,Requests}/**/*.{h,m}', 'lob-ios/Constants/*.{h,m}'
   s.framework = 'Foundation'
 end
