@@ -164,4 +164,10 @@ Tests
 ---------
 To run the iOS Client tests open up the iOS Client project, then build and test. Tests are located in the lob-iosTests folder.
 
+# Installation
 
+You can download the latest framework files from our [Releases page](https://github.com/lob/lob-ios/releases).
+
+Lob is also available through [CocoaPods](http://cocoapods.org). To install it simply add the following line to your Podfile:
+
+    pod "Lob-ios"
