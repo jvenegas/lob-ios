@@ -15,13 +15,14 @@
     
     if(self = [super init]) {
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-        [dateFormat setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss"];
+        [dateFormat setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZ"];
         
-        if(dict[@"date_created"] == NULL) _dateCreated = NULL;
-        else _dateCreated = [dateFormat dateFromString:dict[@"date_created"]];
-        
-        if(dict[@"date_modified"] == NULL) _dateModified = NULL;
-        else _dateModified = [dateFormat dateFromString:dict[@"date_modified"]];
+        NSString *dateCreated = dict[@"date_created"];
+        if(dateCreated)
+            self.dateCreated = [dateFormat dateFromString:dateCreated];
+        NSString *dateModified = dict[@"date_modified"];
+        if(dateModified)
+            self.dateModified = [dateFormat dateFromString:dateModified];
     }
     return self;
 }
