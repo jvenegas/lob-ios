@@ -27,7 +27,7 @@
     if(self = [super init]) {
         _apiKey = @"";
         _count = 2;
-        _offset = 1;
+        _offset = 0;
     }
     return self;
 }
@@ -37,7 +37,7 @@
         _apiKey = [NSString stringWithFormat:@"%@:",apiKey];
         if(_apiKey == NULL) _apiKey = @"";
         _count = 2;
-        _offset = 1;
+        _offset = 0;
     }
     return self;
 }
