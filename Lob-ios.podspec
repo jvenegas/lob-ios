@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name = 'Lob-ios'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.license = 'MIT'
   s.summary = "Lob.com iOS Client is a simple wrapper for the Lob.com API"
   s.homepage = 'https://github.com/lob/lob-ios'
