@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4ED7B7D189ED21D009B696F /* LobProjectConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ED7B7C189ED21D009B696F /* LobProjectConstants.m */; };
 		CE41427F1881D18E00E5DB04 /* LobAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41427E1881D18E00E5DB04 /* LobAbstractModel.m */; };
 		CE4142801881E8CC00E5DB04 /* LobAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41427E1881D18E00E5DB04 /* LobAbstractModel.m */; };
 		CE4142811881E8CF00E5DB04 /* AbstractBlockRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9F686B187739B7006590CC /* AbstractBlockRequest.m */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B4ED7B7C189ED21D009B696F /* LobProjectConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LobProjectConstants.m; path = Constants/LobProjectConstants.m; sourceTree = "<group>"; };
 		CE41427D1881D18E00E5DB04 /* LobAbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LobAbstractModel.h; path = Models/Abstract/LobAbstractModel.h; sourceTree = "<group>"; };
 		CE41427E1881D18E00E5DB04 /* LobAbstractModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LobAbstractModel.m; path = Models/Abstract/LobAbstractModel.m; sourceTree = "<group>"; };
 		CE9F67FE18773086006590CC /* liblob-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblob-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +233,7 @@
 			children = (
 				CE9F6866187738FE006590CC /* LobLibrary.h */,
 				CE9F682D18773117006590CC /* LobProjectConstants.h */,
+				B4ED7B7C189ED21D009B696F /* LobProjectConstants.m */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9F685618773801006590CC /* LobPackagingModel.m in Sources */,
+				B4ED7B7D189ED21D009B696F /* LobProjectConstants.m in Sources */,
 				CE9F685C18773816006590CC /* LobJobModel.m in Sources */,
 				CE9F686218773829006590CC /* LobCheckModel.m in Sources */,
 				CE9F6850187737EB006590CC /* LobServiceModel.m in Sources */,
