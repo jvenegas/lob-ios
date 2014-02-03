@@ -26,7 +26,7 @@
         _fullBleed = false;
         
         _setting = [LobSettingModel initWithDictionary:dict[@"setting"]];
-        _file = dict[@"file"];
+        _url = dict[@"url"];
     }
     return self;
 }
@@ -52,9 +52,9 @@
     if([prefix isEqualToString:@""]) [items addObject:[NSString stringWithFormat:@"setting_id=%@",[[self setting] settingId]]];
     else [items addObject:[NSString stringWithFormat:@"%@[setting_id]=%@",prefix,[[self setting] settingId]]];
     
-    if([self file]) {
-        NSString *item = [self file];
-         item = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,(__bridge CFStringRef) item,NULL,CFSTR("!*'();:@+$,/?%#[]\" "),kCFStringEncodingUTF8));
+    if([self url]) {
+        NSString *item = [self url];
+        item = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,(__bridge CFStringRef) item,NULL,CFSTR("!*'();:@+$,/?%#[]\" "),kCFStringEncodingUTF8));
         
         if([prefix isEqualToString:@""]) [items addObject:[NSString stringWithFormat:@"file=%@",item]];
         else [items addObject:[NSString stringWithFormat:@"%@[file]=%@",prefix,item]];
@@ -67,7 +67,7 @@
         if([prefix isEqualToString:@""]) [items addObject:@"full_bleed=1"];
         else [items addObject:[NSString stringWithFormat:@"%@[full_bleed]=1",prefix]];
     }
-
+    
     return items;
 }
 

@@ -17,6 +17,6 @@
 @property(nonatomic, assign) BOOL doubleSided;
 @property(nonatomic, assign) BOOL fullBleed;
 @property(nonatomic, strong) LobSettingModel *setting;
-@property(nonatomic, strong) NSString *file;
+@property(nonatomic, strong) NSString *url;
 
 @end
